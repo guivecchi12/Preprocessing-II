@@ -11,6 +11,7 @@ header{
         }
         nav{
             width:40%;
+            height:5vh;
             .flex(space-around, center);
             @media @mobile{
                 width:100%;
@@ -19,6 +20,9 @@ header{
                 text-decoration: none;
                 font-size:1.6rem;
                 color: @font-color;
+            }
+            a:hover{
+                .hover-animation(@sandy-beach,2rem,1);
             }
             
         }
