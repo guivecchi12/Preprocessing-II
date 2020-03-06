@@ -1,1 +1,28 @@
 // Mixins in here
+.flex(@j,@a,@d:row){
+    display:flex;
+    justify-content: @j;
+    align-items: @a;
+    flex-direction: @d;
+}
+
+.page-format{
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+.button{
+    border:1px solid @eastern-blue;
+    background:@button-bg;
+    color:white;
+    font-size: 2rem;
+    text-align: center;
+    width:80%;
+    padding: 10px 0;
+    border-radius: 15px;
+}
+.hover-animation(@c,@s,@o:1){
+    color:@c;
+    font-size: @s;
+    opacity: @o;
+}

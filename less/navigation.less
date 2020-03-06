@@ -1,1 +1,32 @@
 // Navigation Styles here
+header{
+    padding-top:10px;
+    border-bottom: @border;
+    div{
+        .page-format();
+        .flex(space-between, center);
+        padding:10px 0;
+        @media @mobile{
+            .flex(center,center,column);
+        }
+        nav{
+            width:40%;
+            height:5vh;
+            .flex(space-around, center);
+            @media @mobile{
+                width:100%;
+            }
+            a{
+                text-decoration: none;
+                font-size:1.6rem;
+                color: @font-color;
+            }
+            a:hover{
+                .hover-animation(@sandy-beach,2rem,1);
+            }
+            
+        }
+    }
+
+    
+}
